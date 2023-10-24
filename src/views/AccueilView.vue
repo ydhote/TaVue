@@ -8,7 +8,7 @@
       <br>
       <br>
       </p>
-      <router-link to="/MonEspaceView">
+      <router-link to="/monespace">
         <button class="main-button">PERSONNALISE TES LUNETTES</button>
       </router-link>
       <div class="main-photos">
@@ -40,7 +40,7 @@
         <br>
         <br>
       </p>
-      <router-link to="/MonEspaceView">
+      <router-link to="/monespace">
         <button class="custom-glasses-button">PERSONNALISER MES LUNETTES</button>
       </router-link>
     </div>
