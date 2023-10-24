@@ -127,8 +127,9 @@ const deconnect = ()=>{
       </div>
     </nav>
 
-    <footervue />
+    
     <RouterView />
+    <footervue />
 </div>
 
 
