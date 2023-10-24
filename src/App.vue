@@ -153,6 +153,8 @@ const deconnect = ()=>{
   padding: 10px 20px; /* Ajoutez du rembourrage pour le style rectangulaire */
   border: none;
   cursor: pointer; /* Changez le curseur au survol pour montrer que c'est un bouton */
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
 }
 </style>
 

@@ -1,152 +1,185 @@
+<!--
+<script>
+var connected = false;
+var pocketbase_ip = "";
+if (import.meta.env.MODE === "production")
+  pocketbase_ip = "";
+else pocketbase_ip = "http://127.0.0.1:8090";
+const pb = new PocketBase(pocketbase_ip);
+var currentUser;
+
+export default {
+  methods: {
+    async login() {
+      await pb.collection("users").authWithOAuth2({ provider: "google" });
+      if (pb.authStore.isValid) {
+        document.getElementById("status").innerHTML = "You are now logged in";
+        connected = true;
+        currentUser = pb.authStore.model;
+      }
+    },
+  },
+};
+</script>
+-->
+
+
 <template>
   <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="text-center">
-          <img src="/chemin/vers/logo.png" alt="Logo" />
-          <h2>S'inscrire sur TaVue</h2>
-          <p>S'inscrire avec Google / Facebook</p>
+    <div class="image-container">
+      <img src="src/assets/images/pageconnexion.webp" alt="Image page connexion lunettes" />
+    </div>
+    <div class="form-container">
+      <div class="inscription">
+        <h1>S'inscrire sur TaVue</h1>
+        <button @click="login" class="google">S'inscrire avec Google</button>
+        <button @click="github" class="facebook">S'inscrire avec Facebook</button>
+        <div class="separator">
+          <p class="text-center black-text">Ou</p>
         </div>
-      </div>
-      <div class="col-md-6">
-        <div class="form-container">
-          <h2>Connexion / Inscription</h2>
-          <form v-if="isLoginForm" @submit.prevent="handleLogin">
-            <!-- Votre formulaire de connexion -->
-          </form>
-          <form v-else @submit.prevent="handleSignup">
-            <div class="form-group">
-              <input type="text" class="form-control" v-model="fullName" placeholder="Nom complet" />
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" v-model="username" placeholder="Nom d'utilisateur" />
-            </div>
-            <div class="form-group">
-              <input type="email" class="form-control" v-model="email" placeholder="Adresse email" />
-            </div>
-            <div class="form-group">
-              <input type="password" class="form-control" v-model="password" placeholder="Mot de passe" />
-            </div>
-            <div class="form-check">
-              <input type="checkbox" class="form-check-input" v-model="privacyPolicy" />
-              <label class="form-check-label">Vie privée et politique</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Créer un compte</button>
-          </form>
-          <p>
-            Déjà membre ? 
-            <a @click="showLoginForm">S'identifier</a>
-          </p>
+        <div class="input-group">
+          <label for="name" class="black-text">Nom complet</label>
+          <input type="text" required id="name" />
         </div>
+        <div class="input-group">
+          <label for="username" class="black-text">Nom d'utilisateur</label>
+          <input type="text" required id="username" />
+        </div>
+        <div class="input-group">
+          <label for="email" class="black-text">Adresse email</label>
+          <input type="email" required id="email" />
+        </div>
+        <div class="input-group">
+          <label for="password" class="black-text">Mot de passe</label>
+          <input type="password" required id="password" />
+        </div>
+        <div class="input-group checkbox">
+          <input type="checkbox" required id="checkbox" />
+          <label class="box black-text">Accepter la vie privée et la politique</label>
+        </div>
+        <button @click="login" class="button-connexion">Créer un compte</button>
       </div>
     </div>
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      fullName: "",
-      username: "",
-      email: "",
-      password: "",
-      privacyPolicy: false,
-      isLoginForm: true,
-    };
-  },
-  methods: {
-    async handleLogin() {
-      try {
-        // Utilisez PocketBase pour la connexion ici
-        // par exemple, pb.authStore.login(email, password)
-        // Vérifiez si la connexion réussit
-        // Si oui, redirigez l'utilisateur vers la page appropriée
-      } catch (error) {
-        alert("Erreur d'identification : mauvais login et/ou mot de passe");
-      }
-    },
-    async handleSignup() {
-      try {
-        // Utilisez PocketBase pour l'inscription ici
-        // par exemple, pb.collection('users').create({ email, password, ... })
-        // Vérifiez si l'inscription réussit
-        // Si oui, redirigez l'utilisateur vers la page appropriée
-      } catch (error) {
-        alert("Erreur lors de l'inscription : " + error.message);
-      }
-    },
-    showLoginForm() {
-      this.isLoginForm = true;
-    },
-  },
-};
-</script>
-
 <style scoped>
-.form-container {
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   background-color: white;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.form-container {
-  background-color: white;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+h1 {
+  font-family: 'Arima Madurai', sans-serif;
+  color: black;
 }
 
-h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
+.image-container {
+  flex: 1;
+  background-color: #f5f5f5; /* Fond blanc pour la partie image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 }
 
-.form-group {
-  margin-bottom: 15px;
-}
-
-.form-control {
+.image-container img {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  max-height: 100%;
+  object-fit: cover;
 }
 
-.form-check {
-  margin-bottom: 20px;
+.form-container {
+  flex: 1;
+  background-color: #f5f5f5; /* Fond blanc pour la partie formulaire */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
-.form-check-label {
-  color: #333;
+.inscription {
+  text-align: center;
 }
 
-.btn-primary {
-  background-color: #333; /* Couleur de fond du bouton */
-  color: white; /* Couleur du texte du bouton */
-  padding: 10px 20px;
+h1 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.google,
+.facebook {
   border: none;
   border-radius: 5px;
+  font-size: 20px;
+  padding: 5px 10px;
+  margin: 5px 10px;
   cursor: pointer;
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
 }
 
-.btn-primary:hover {
-  background-color: #555; /* Couleur de fond au survol */
+.google {
+  background-color: mediumslateblue;
 }
 
-.btn-primary:active {
-  background-color: #222; /* Couleur de fond au clic */
+.facebook {
+  background-color: bisque;
 }
 
-a {
-  text-decoration: none;
-  color: #333;
+.separator {
+  margin: 10px 0;
+  font-weight: bold;
 }
 
-a:hover {
-  text-decoration: underline;
+.input-group {
+  margin: 10px 0;
 }
 
+input {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 20px;
+  width: 100%;
+  color: black;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.box {
+  margin-left: 10px;
+}
+
+.button-connexion {
+  border: none;
+  border-radius: 5px;
+  font-size: 30px;
+  padding: 5px 20px;
+  background-color: #313131;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+}
+
+.black-text {
+  color: black; /* Texte en noir */
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
 </style>
