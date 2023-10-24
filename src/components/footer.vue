@@ -67,9 +67,14 @@
 
 <style scoped>
 footer {
-  background-color: #333; /* Couleur de fond du footer */
-  color: white; /* Couleur du texte dans le footer */
-  padding: 20px 0; /* Marge intérieure en haut et en bas */
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  margin-top: auto;
 }
 
 footer a {
