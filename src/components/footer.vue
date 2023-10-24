@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <footer class="footer" style="height: 450px;">
+  <footer class="footer" style="height: 350px;">
     <div class="container">
         <div class="row">
             <div class="col-md-4">
@@ -60,6 +60,7 @@
                 </div>
             </div>
     </div>
+    <p class="copyright-text">© 2023 TaVue. Tous droits réservés. Réalisé par Yann</p>
     </div>
 </footer>
 
@@ -77,7 +78,7 @@ footer {
   margin-top: auto;
 }
 
-footer a {
+.footer a {
   color: #FFD700; /* Couleur des liens dans le footer */
 }
 
@@ -122,4 +123,14 @@ li {
 /* Styles pour le paragraphe "Créez votre regard, Nous le rendons unique" */
 .footer p {
     color: #CACACA; /* Couleur du texte du paragraphe */
-}</style>
+}
+
+.copyright-text {
+  font-size: 16px;
+  color: white;
+  position: absolute;
+  bottom: 10px; /* Place le texte au bas du footer avec 10px de marge par rapport au bas */
+  width: 100%;
+}
+</style>
+
