@@ -6,7 +6,7 @@
     <div class="customization">
       <div class="left-column">
         <div class="frame">
-          <img src="/chemin/vers/monture.jpg" alt="Monture de lunettes personnalisable" />
+          <!--<img src="/chemin/vers/monture.jpg" alt="Monture de lunettes personnalisable" />-->
         </div>
       </div>
 
@@ -131,5 +131,6 @@ h2 {
   margin-top: 40px;
   font-weight: 600;
   font-family: 'Plus Jakarta Sans', sans-serif;
+  margin-bottom: 50px;
 }
 </style>

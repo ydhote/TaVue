@@ -73,7 +73,7 @@ const onMountedSetup = onMounted(async () => {
   refresh();
 });
 
-const refresh = () => { 
+const refresh = () => {
   if (pocketBase.authStore.isValid) {
     currentUser.value = pocketBase.authStore.model;
     isConnected.value = true;

@@ -5,19 +5,19 @@
 
     <div class="glasses">
       <div class="glasses-item">
-        <img src="src/assets/images/lunettes1.webp" alt="Monture 1" />
+        <img src="/src/assets/images/lunettes1.webp" alt="Monture 1" />
         <h2 class="glasses-name">Élégance Classique</h2>
         <p class="glasses-price">149.99€</p>
         <router-link to="/mesperso" class="select-button">SÉLECTIONNER</router-link>
       </div>
       <div class="glasses-item">
-        <img src="src/assets/images/lunettes2.webp" alt="Monture 2" />
+        <img src="/src/assets/images/lunettes2.webp" alt="Monture 2" />
         <h2 class="glasses-name">Modernité Minimaliste</h2>
         <p class="glasses-price">129.99€</p>
         <router-link to="/mesperso" class="select-button">SÉLECTIONNER</router-link>
       </div>
       <div class="glasses-item">
-        <img src="src/assets/images/lunettes3.webp" alt="Monture 3" />
+        <img src="/src/assets/images/lunettes3.webp" alt="Monture 3" />
         <h2 class="glasses-name">Chic & Choc</h2>
         <p class="glasses-price">179.99€</p>
         <router-link to="/mesperso" class="select-button">SÉLECTIONNER</router-link>
@@ -34,22 +34,22 @@
 
     <div class="lenses">
       <div class="lens-item">
-        <img src="src/assets/images/antirayure.webp" alt="Verre 1" />
+        <img src="/src/assets/images/antirayure.webp" alt="Verre 1" />
         <h2 class="lens-name">Anti-rayures</h2>
         <a class="learn-more-link" href="#">En savoir plus</a>
       </div>
       <div class="lens-item">
-        <img src="src/assets/images/antireflet.webp" alt="Verre 2" />
+        <img src="/src/assets/images/antireflet.webp" alt="Verre 2" />
         <h2 class="lens-name">Anti-reflets</h2>
         <a class="learn-more-link" href="#">En savoir plus</a>
       </div>
       <div class="lens-item">
-        <img src="src/assets/images/lumierebleu.webp" alt="Verre 3" />
+        <img src="/src/assets/images/lumierebleu.webp" alt="Verre 3" />
         <h2 class="lens-name">Anti-lumière Bleue</h2>
         <a class="learn-more-link" href="#">En savoir plus</a>
       </div>
       <div class="lens-item">
-        <img src="src/assets/images/polarise.webp" alt="Verre 4" />
+        <img src="/src/assets/images/polarise.webp" alt="Verre 4" />
         <h2 class="lens-name">Polarisés</h2>
         <a class="learn-more-link" href="#">En savoir plus</a>
       </div>

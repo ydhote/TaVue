@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import AccueilView from '../views/AccueilView.vue';
+import AccueilView from '../views/index.vue';
 import PersonnalisationView from '../views/PersonnalisationView.vue';
 import MespersoView from '../views/MespersoView.vue';
 import MonEspaceView from '../views/MonEspaceView.vue';

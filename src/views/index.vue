@@ -13,13 +13,13 @@
       </router-link>
       <div class="main-photos">
         <div class="photo ">
-          <img src="src/assets/images/photo1.webp" alt="Photo 1" />
+          <img src="/src/assets/images/photo1.webp" alt="Photo 1" />
         </div>
         <div class="photo">
-          <img src="src/assets/images/photo2.webp" alt="Photo 2" />
+          <img src="/src/assets/images/photo2.webp" alt="Photo 2" />
         </div>
         <div class="photo">
-          <img src="src/assets/images/photo3.webp" alt="Photo 3" />
+          <img src="/src/assets/images/photo3.webp" alt="Photo 3" />
         </div>
       </div>
     </div>
@@ -51,31 +51,36 @@
       <p class="testimonials-subtitle">Ce que nos clients pensent de nous...</p>
       <div class="testimonials">
         <div class="testimonial">
-          <img src="src/assets/images/avatar4.webp" alt="Avatar 1" />
+          <img src="/src/assets/images/avatar4.webp" alt="Avatar 1" />
           <div class="testimonial-content">
             <div class="testimonial-header">
               <span class="testimonial-name">Sophie L.</span>
               <div class="testimonial-rating">★★★★★</div>
             </div>
             <p class="testimonial-comment">
-              J'ai récemment commandé mes lunettes chez TaVue, et je suis ravie de ma décision. La personnalisation a été simple, et mes lunettes sont exactement comme je les avais imaginées. La qualité est au rendez-vous, et je reçois régulièrement des compliments à leur sujet. Merci, TaVue
+              J'ai récemment commandé mes lunettes chez TaVue, et je suis ravie de ma décision. 
+              La personnalisation a été simple, et mes lunettes sont exactement comme je les avais imaginées. 
+              La qualité est au rendez-vous, et je reçois régulièrement des compliments à leur sujet. Merci, TaVue.
             </p>
           </div>
         </div>
         <div class="testimonial">
-          <img src="src/assets/images/avatar1.webp" alt="Avatar 2" />
+          <img src="/src/assets/images/avatar1.webp" alt="Avatar 2" />
           <div class="testimonial-content">
             <div class="testimonial-header">
               <span class="testimonial-name">Marc B.</span>
               <div class="testimonial-rating">★★★★★</div>
             </div>
             <p class="testimonial-comment">
-              Ma première expérience avec TaVue a été très positive. J'ai personnalisé mes lunettes pour un look unique, et elles sont superbes. La livraison a été rapide, mais j'aurais aimé avoir plus d'options de personnalisation pour les branches. Cependant, je recommande TaVue à tous ceux qui veulent des lunettes personnalisées.
+              Ma première expérience avec TaVue a été très positive. 
+              J'ai personnalisé mes lunettes pour un look unique, et elles sont superbes. La livraison a été rapide, 
+              mais j'aurais aimé avoir plus d'options de personnalisation pour les branches. Cependant, 
+              je recommande TaVue à tous ceux qui veulent des lunettes personnalisées.
             </p>
           </div>
         </div>
         <div class="testimonial">
-          <img src="src/assets/images/avatar2.webp" alt="Avatar 3" />
+          <img src="/src/assets/images/avatar2.webp" alt="Avatar 3" />
           <div class="testimonial-content">
             <div class="testimonial-header">
               <span class="testimonial-name">Lina M.</span>
@@ -87,14 +92,17 @@
           </div>
         </div>
         <div class="testimonial">
-          <img src="src/assets/images/avaatr3.webp" alt="Avatar 4" />
+          <img src="/src/assets/images/avaatr3.webp" alt="Avatar 4" />
           <div class="testimonial-content">
             <div class="testimonial-header">
               <span class="testimonial-name">Thomas G.</span>
               <div class="testimonial-rating">★★★★★</div>
             </div>
             <p class="testimonial-comment">
-              Je suis un client fidèle de TaVue, et pour cause ! Mes lunettes personnalisées sont toujours superbes, et le service est excellent. La personnalisation est un jeu d'enfant, et le choix des options est vaste. Mes amis me demandent toujours où j'ai acheté mes lunettes, et je suis fier de leur dire TaVue.
+              Je suis un client fidèle de TaVue, et pour cause ! 
+              Mes lunettes personnalisées sont toujours superbes, et le service est excellent. 
+              La personnalisation est un jeu d'enfant, et le choix des options est vaste. 
+              Mes amis me demandent toujours où j'ai acheté mes lunettes, et je suis fier de leur dire TaVue.
             </p>
           </div>
         </div>
@@ -236,6 +244,7 @@
 
   .testimonial-comment {
     margin-top: 10px;
+    
   }
 
   /* Styles pour le bouton "main-button" */

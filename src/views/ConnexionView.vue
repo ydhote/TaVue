@@ -8,7 +8,7 @@
         <div class="inscription">
           <h1>Me connecter sur TaVue</h1>
           <p class="already-have-account">
-            <span class="underline-text" @click="redirectToSign">Je n'ai pas encore de compte</span>
+            <span class="underline-text" @click="redirectToSign">Je n'ai pas de compte</span>
           </p>
           <div class="input-group">
             <label for="username" class="black-text">Nom d'utilisateur</label>
@@ -82,7 +82,7 @@
   h1 {
     font-family: 'Arima Madurai', sans-serif;
     color: black;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
     margin-top: 20px;
   }

@@ -98,6 +98,7 @@ ul {
 
 li {
     margin: 5px 0; /* Espacement entre les éléments de la liste */
+    font-size: 12px;
 }
 
 .footer-bottom {
