@@ -130,7 +130,6 @@ li {
   color: white;
   position: absolute;
   bottom: 10px; /* Place le texte au bas du footer avec 10px de marge par rapport au bas */
-  width: 100%;
 }
 </style>
 

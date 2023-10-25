@@ -1,11 +1,14 @@
-import { createApp, VueElement } from 'vue'
+import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
+import PocketBase from 'pocketbase';
 
-//import './assets/main.css'
+const pb = new PocketBase("http://127.0.0.1:8090");
 
-const app = createApp(App)
+const app = createApp(App);
 
-app.use(router)
+app.config.globalProperties.$pb = pb;
 
-app.mount('#app')
+app.use(router);
+
+app.mount('#app');

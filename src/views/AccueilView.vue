@@ -8,7 +8,7 @@
       <br>
       <br>
       </p>
-      <router-link to="/monespace">
+      <router-link to="/personnalisation">
         <button class="main-button">PERSONNALISE TES LUNETTES</button>
       </router-link>
       <div class="main-photos">
@@ -40,7 +40,7 @@
         <br>
         <br>
       </p>
-      <router-link to="/monespace">
+      <router-link to="/personnalisation">
         <button class="custom-glasses-button">PERSONNALISER MES LUNETTES</button>
       </router-link>
     </div>
@@ -117,7 +117,7 @@
   .main-title {
     font-size: 40px;
     margin-bottom: 10px;
-    margin-top: 100px;
+    margin-top: 85px;
     font-family: 'Arima Madurai', sans-serif; /* Utilisation de la police Arima Madurai */
   }
 
@@ -148,8 +148,8 @@
   }
 
   .photo img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
   }
 
   .custom-glasses-section {
@@ -163,7 +163,7 @@
   .custom-glasses-title {
     font-size: 40px;
     margin-bottom: 10px;
-    margin-top: 50px;
+    margin-top: 100px;
     font-family: 'Arima Madurai', sans-serif; /* Utilisation de la police Arima Madurai */
   }
 
@@ -194,6 +194,7 @@
   .testimonials-title {
     font-size: 40px;
     margin-bottom: 10px;
+    margin-top: 50px;
     text-align: center;
     font-family: 'Arima Madurai', sans-serif; /* Utilisation de la police Arima Madurai */
   }
