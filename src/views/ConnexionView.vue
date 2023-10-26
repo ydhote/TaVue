@@ -47,7 +47,7 @@
           return;
         }
         
-        const pocketbase_ip = process.env.NODE_ENV === "production" ? "" : "http://127.0.0.1:8090";
+        const pocketbase_ip = process.env.NODE_ENV === "production" ? "" : "https://tavue.yanndhote.com:443";
         const pb = new PocketBase(pocketbase_ip);
   
         try {

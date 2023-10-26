@@ -1,12 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import AccueilView from '../views/index.vue';
+import AccueilView from '../views/AccueilView.vue';
 import PersonnalisationView from '../views/PersonnalisationView.vue';
 import MespersoView from '../views/MespersoView.vue';
 import MonEspaceView from '../views/MonEspaceView.vue';
 import ConnexionView from '../views/ConnexionView.vue';
 import PocketBase from 'pocketbase';
 
-const pb = new PocketBase("http://127.0.0.1:8090");
+const pb = new PocketBase("https://tavue.yanndhote.com:443");
 
 const checkAuthentication = (to, from, next) => {
   if (pb.authStore.isValid) {
@@ -21,7 +21,7 @@ const checkAuthentication = (to, from, next) => {
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    { path: '/accueil', name: 'AccueilView', component: AccueilView },
+    { path: '/index', name: 'AccueilView', component: AccueilView },
     {
       path: '/personnalisation',
       name: 'PersonnalisationView',

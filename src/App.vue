@@ -22,7 +22,7 @@ import footervue from './components/footer.vue';
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <RouterLink class="nav-link header-text-bold" to="/accueil">Accueil</RouterLink>
+            <RouterLink class="nav-link header-text-bold" to="/index">Accueil</RouterLink>
           </li>
           <li class="nav-item">
             <RouterLink class="nav-link" to="/personnalisation">Personnalisation</RouterLink>
@@ -47,8 +47,9 @@ import footervue from './components/footer.vue';
         </div>
       </div>
     </nav>
-
+<Suspense>
     <RouterView />
+  </Suspense>
     <footervue />
   </div>
   
