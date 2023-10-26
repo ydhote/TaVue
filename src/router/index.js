@@ -10,10 +10,8 @@ const pb = new PocketBase("https://tavue.yanndhote.com:443");
 
 const checkAuthentication = (to, from, next) => {
   if (pb.authStore.isValid) {
-    // L'utilisateur est connecté, laissez-le accéder à la page
-    next('/personnalisation');
+    next();
   } else {
-    // L'utilisateur n'est pas connecté, redirigez-le vers la page de connexion
     next('/connexion');
   }
 };
@@ -22,19 +20,9 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     { path: '/', name: 'AccueilView', component: AccueilView },
-    {
-      path: '/personnalisation',
-      name: 'PersonnalisationView',
-      component: PersonnalisationView,
-      beforeEnter: checkAuthentication, // Ajoutez le garde de navigation ici
-    },
-    {
-      path: '/mesperso',
-      name: 'MespersoView',
-      component: MespersoView,
-      beforeEnter: checkAuthentication, // Ajoutez le garde de navigation ici
-    },
-    { path: '/monespace', name: 'MonEspaceView', component: MonEspaceView },
+    { path: '/personnalisation', name: 'PersonnalisationView', component: PersonnalisationView, meta: { requiresAuth: true }, beforeEnter: checkAuthentication },
+    { path: '/mesperso', name: 'MespersoView', component: MespersoView, meta: { requiresAuth: true }, beforeEnter: checkAuthentication },
+    { path: '/monespace', name: 'MonEspaceView', component: MonEspaceView, meta: { requiresAuth: true }, beforeEnter: checkAuthentication },
     { path: '/connexion', name: 'ConnexionView', component: ConnexionView },
   ],
 });

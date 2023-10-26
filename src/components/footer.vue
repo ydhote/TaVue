@@ -60,7 +60,7 @@
                 </div>
             </div>
     </div>
-    <p class="copyright-text">© 2023 TaVue. Tous droits réservés. Réalisé par Yann</p>
+    <p class="copyright-text">© 2023 TaVue. Tous droits réservés. Réalisé par Yann DHOTE</p>
     </div>
 </footer>
 
