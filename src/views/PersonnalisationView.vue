@@ -28,8 +28,8 @@
       Votre style unique mérite des lunettes uniques. Personnalisez dès maintenant.
     </p>
 
-    <!-- Deuxième titre et contenu -->
-    <h2 class="title">Nos verres</h2>
+
+    <h2 class="title2">Nos verres</h2>
     <p class="subtitle">Optimisez votre vision. Explorez les traitements et filtres disponibles pour personnaliser vos verres selon vos besoins visuels et votre mode de vie.</p>
 
     <div class="lenses">
@@ -70,6 +70,13 @@
   font-family: 'Arima Madurai', sans-serif;
 }
 
+.title2 {
+  font-size: 40px;
+  margin-top: 80px;
+  font-family: 'Arima Madurai', sans-serif;
+  margin-top: 150px;
+}
+
 .subtitle {
   font-size: 16px;
   margin-bottom: 20px;
@@ -79,7 +86,7 @@
 .glasses {
   display: flex;
   justify-content: space-between;
-  margin-top: 60px;
+  margin-top: 100px;
 }
 
 .glasses-item {
@@ -119,15 +126,15 @@
 .unique-style {
   font-size: 16px;
   text-align: left;
-  margin-top: 20px;
+  margin-top: 70px;
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-/* Nouveau style pour la section "Nos verres" */
 .lenses {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
+  margin-bottom: 60px;
 }
 
 .lens-item {

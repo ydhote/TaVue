@@ -94,7 +94,6 @@
               @click="selectMontureColor('#000000')"
               style="background-color: #000000"
             ></div>
-            <!-- Ajoutez d'autres couleurs pour la monture ici -->
           </div>
         </div>
 
@@ -143,7 +142,6 @@
               @click="selectBranchesColor('#000000')"
               style="background-color: #000000"
             ></div>
-            <!-- Ajoutez d'autres couleurs pour les branches ici -->
           </div>
         </div>
 
@@ -192,7 +190,6 @@
               @click="selectVerresColor('#346CFB')"
               style="background-color: #346CFB"
             ></div>
-            <!-- Ajoutez d'autres couleurs pour les verres ici -->
           </div>
         </div>
       </div>
@@ -238,7 +235,7 @@ export default {
 
 .title {
   font-size: 40px;
-  margin-top: 80px;
+  margin-top: 67px;
   font-family: 'Arima Madurai', sans-serif;
 }
 
