@@ -79,58 +79,56 @@ footer {
 }
 
 .footer a {
-  color: #FFD700; /* Couleur des liens dans le footer */
+  color: #FFD700;
 }
 
 .footer-categories {
     display: flex;
-    justify-content: space-between; /* Pour l'espacement entre les catégories */
+    justify-content: space-between;
 }
 
 .footer-category {
-    margin: 10px; /* Espacement entre les catégories */
+    margin: 10px; 
 }
 
 ul {
-    list-style: none; /* Supprime les puces de la liste */
+    list-style: none;
     padding: 0;
 }
 
 li {
-    margin: 5px 0; /* Espacement entre les éléments de la liste */
+    margin: 5px 0; 
     font-size: 12px;
 }
 
 .footer-bottom {
     text-align: center;
-    background-color: white; /* Fond blanc */
-    color: grey; /* Couleur de texte gris */
+    background-color: white; 
+    color: grey; 
 }
 
-/* Styles pour le footer */
 .footer {
-    background-color: #000000; /* Couleur de fond du footer */
+    background-color: #000000; 
 }
 
-/* Styles pour les catégories du footer */
 .footer-title {
-    color: #FFFFFF; /* Couleur du texte des titres de catégories */
+    color: #FFFFFF; 
 }
 
 .footer-list li {
-    color: #CACACA; /* Couleur du texte des éléments de liste */
+    color: #CACACA; 
 }
 
-/* Styles pour le paragraphe "Créez votre regard, Nous le rendons unique" */
 .footer p {
-    color: #CACACA; /* Couleur du texte du paragraphe */
+    color: #CACACA; 
 }
 
 .copyright-text {
   font-size: 16px;
   color: white;
   position: absolute;
-  bottom: 10px; /* Place le texte au bas du footer avec 10px de marge par rapport au bas */
+  bottom: 10px;
 }
+
 </style>
 

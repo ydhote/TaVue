@@ -64,7 +64,7 @@
         }
       },
       redirectToSign() {
-        this.$router.push('/monespace'); // Assurez-vous que la route '/inscription' existe dans votre configuration de routage.
+        this.$router.push('/monespace');
       },
     },
   };
@@ -106,11 +106,11 @@
   .top-right-text {
 
   font-size: 14px;
-  color: white; /* Choisissez une couleur qui se démarque sur l'image */
-  background-color: rgba(0, 0, 0, 0.7); /* Arrière-plan semi-transparent pour le texte */
+  color: white; 
+  background-color: rgba(0, 0, 0, 0.7); 
   padding: 5px;
   border-radius: 5px;
-  z-index: 1; /* Pour placer le texte au-dessus de l'image */
+  z-index: 1; 
 }
   
   .form-container {

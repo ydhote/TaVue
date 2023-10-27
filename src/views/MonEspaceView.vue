@@ -54,7 +54,7 @@ export default {
         return;
       }
       try {
-        // Utilisez PocketBase (this.$pb) pour créer un nouvel utilisateur et enregistrer les données
+        // Créer un nouvel utilisateur et enregistrer les données
         const user = await this.$pb.collection('users').insert({
           name: this.name,
           username: this.username,
@@ -63,7 +63,7 @@ export default {
         });
 
         if (user) {
-          // Enregistrement réussi, redirigez l'utilisateur vers la page PersonnalisationView.vue
+          // Enregistrement réussi, rediriger l'utilisateur vers la page PersonnalisationView.vue
           this.$router.push('/personnalisation');
         } else {
           alert("Erreur lors de l'inscription. Veuillez réessayer.");
@@ -73,7 +73,7 @@ export default {
       }
     },
     redirectToLogin() {
-      this.$router.push('/connexion'); // Assurez-vous que la route '/connexion' existe dans votre configuration de routage.
+      this.$router.push('/connexion'); 
     },
   },
 };
@@ -95,7 +95,7 @@ h1 {
 
 .image-container {
   flex: 1;
-  background-color: #f5f5f5; /* Fond blanc pour la partie image */
+  background-color: #f5f5f5; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,7 +110,7 @@ h1 {
 
 .form-container {
   flex: 1;
-  background-color: #f5f5f5; /* Fond blanc pour la partie formulaire */
+  background-color: #f5f5f5; 
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -195,7 +195,7 @@ input {
 }
 
 .black-text {
-  color: black; /* Texte en noir */
+  color: black; 
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
@@ -211,7 +211,7 @@ input {
   }
 
   .already-have-account:hover {
-    color: blue; /* Vous pouvez changer la couleur du texte souligné si nécessaire */
+    color: blue; 
   }
   
 

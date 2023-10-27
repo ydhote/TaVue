@@ -1,6 +1,6 @@
 <template>
   <div class="background">
-    <!-- Contenu principal de votre page d'accueil -->
+    <!-- Contenu principal page d'accueil -->
     <div class="main-content">
       <h1 class="main-title">Créez votre Look unique avec TaVue</h1>
       <p class="main-text text-center">
@@ -43,6 +43,26 @@
       <router-link to="/personnalisation">
         <button class="custom-glasses-button">PERSONNALISER MES LUNETTES</button>
       </router-link>
+    </div>
+
+    <div class="intro-section">
+      <div class="intro-content">
+        <h2 class="intro-title">Pourquoi choisir TaVue ?</h2>
+        <ul class="intro-list">
+          <li>
+            <b>📦  Livraison rapide en 48 heures  📦</b>
+          </li>
+          <li>
+            <b>⭐️  Taux de satisfaction client de 98%  ⭐️</b>
+          </li>
+          <li>
+            <b>🇫🇷  Qualité artisanale française  🇫🇷</b>
+          </li>
+        </ul>
+        <p class="intro-text">
+          Nous nous engageons à vous offrir la meilleure expérience de personnalisation de lunettes. Notre livraison rapide, notre taux de satisfaction client élevé et notre artisanat de qualité font de nous le meilleur choix pour vos besoins en lunettes. Découvrez la différence TaVue aujourd'hui !
+        </p>
+      </div>
     </div>
 
         <!-- Section des témoignages de clients -->
@@ -126,24 +146,24 @@
     font-size: 40px;
     margin-bottom: 10px;
     margin-top: 85px;
-    font-family: 'Arima Madurai', sans-serif; /* Utilisation de la police Arima Madurai */
+    font-family: 'Arima Madurai', sans-serif; 
   }
 
   .main-text {
     font-size: 16px;
     text-align: left;
-    margin: 0 20px; /* Marge à gauche et à droite du texte */
+    margin: 0 20px; 
     font-family: 'Plus Jakarta Sans', sans-serif;
   }
 
   .main-button {
     background-color: #8739EA;
     color: white;
-    padding: 8px 16px; /* Bouton plus petit */
+    padding: 8px 16px; 
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin: 10px 0; /* Espace sous le bouton */
+    margin: 10px 0; 
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 600;
   }
@@ -158,6 +178,8 @@
   .photo img {
     width: 300px;
     height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
   }
 
   .custom-glasses-section {
@@ -172,24 +194,24 @@
     font-size: 40px;
     margin-bottom: 10px;
     margin-top: 100px;
-    font-family: 'Arima Madurai', sans-serif; /* Utilisation de la police Arima Madurai */
+    font-family: 'Arima Madurai', sans-serif; 
   }
 
   .custom-glasses-text {
     font-size: 16px;
     text-align: left;
-    margin: 0 20px; /* Marge à gauche et à droite du texte */
+    margin: 0 20px; 
   }
 
   .custom-glasses-button {
     background-color: #8739EA;
     color: white;
-    padding: 8px 16px; /* Bouton plus petit */
+    padding: 8px 16px; 
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin: 10px 0; /* Espace sous le bouton */
-    text-align: left; /* Justification à gauche */
+    margin: 10px 0; 
+    text-align: left; 
   }
 
   .testimonials-section {
@@ -204,7 +226,7 @@
     margin-bottom: 10px;
     margin-top: 50px;
     text-align: center;
-    font-family: 'Arima Madurai', sans-serif; /* Utilisation de la police Arima Madurai */
+    font-family: 'Arima Madurai', sans-serif; 
   }
 
   .testimonials-subtitle {
@@ -220,7 +242,7 @@
   }
 
   .testimonial {
-    background-color: #f5f5f5; /* Gris clair */
+    background-color: #f5f5f5; 
     padding: 20px;
     border-radius: 5px;
     text-align: center;
@@ -239,7 +261,7 @@
   }
 
   .testimonial-rating {
-    color: #ffd700; /* Jaune */
+    color: #ffd700;
   }
 
   .testimonial-comment {
@@ -247,7 +269,7 @@
     
   }
 
-  /* Styles pour le bouton "main-button" */
+
 .main-button {
   background-color: #8739EA;
   color: white;
@@ -257,14 +279,14 @@
   cursor: pointer;
   margin: 10px 0;
   text-align: left;
-  transition: background-color 0.3s; /* Animation de transition pour le changement de couleur de fond */
+  transition: background-color 0.3s; 
 }
 
 .main-button:hover {
-  background-color: #6d2aaf; /* Couleur de fond au survol */
+  background-color: #6d2aaf;
 }
 
-/* Styles pour le bouton "custom-glasses-button" */
+
 .custom-glasses-button {
   background-color: #8739EA;
   color: white;
@@ -274,12 +296,52 @@
   cursor: pointer;
   margin: 10px 0;
   text-align: left;
-  transition: background-color 0.3s; /* Animation de transition pour le changement de couleur de fond */
+  transition: background-color 0.3s; 
 }
-
 .custom-glasses-button:hover {
-  background-color: #6d2aaf; /* Couleur de fond au survol */
+  background-color: #6d2aaf; 
 }
 
+.intro-section {
+  background-color: #f8f8f8;
+  padding: 40px 0;
+  margin-top: 50px;
+}
+
+.intro-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.intro-title {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Arima Madurai', sans-serif; 
+}
+
+.intro-list {
+  list-style: none;
+  padding: 0;
+}
+
+.intro-list li {
+  font-size: 18px;
+  margin: 10px 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.intro-list i {
+  color: #8739EA; 
+  margin-right: 10px;
+}
+
+.intro-text {
+  font-size: 16px;
+  color: #555;
+  margin-top: 20px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
 
 </style>

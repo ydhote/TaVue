@@ -125,7 +125,7 @@
 
 .unique-style {
   font-size: 16px;
-  text-align: left;
+  text-align: center;
   margin-top: 70px;
   font-family: 'Plus Jakarta Sans', sans-serif;
 }

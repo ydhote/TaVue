@@ -262,7 +262,7 @@ const selectedFrameShape = ref('');
   }
   
   .selected {
-    border: 2px solid #8739EA; /* Couleur de sélection */
+    border: 2px solid #8739EA; 
   }
   
   .order-button {
